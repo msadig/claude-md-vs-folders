@@ -1,0 +1,16 @@
+{
+ "content": 100.0,
+ "style": 93.7,
+ "format": 100.0,
+ "total": 95.4,
+ "failed": [
+  "style: #431 credit right",
+  "style: #405 credit right",
+  "style: #415 credit right",
+  "style: #427 credit right",
+  "style: #401 credit right",
+  "style: #403 starts with a capital",
+  "style: #407 credit right",
+  "style: #414 credit right"
+ ]
+}

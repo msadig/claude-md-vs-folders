@@ -1,0 +1,60 @@
+{
+ "total_cost_usd": 0.00859886,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 16382,
+  "cache_read_input_tokens": 106046,
+  "output_tokens": 8522,
+  "output_tokens_details": {
+   "thinking_tokens": 6010
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16382,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 426,
+    "cache_read_input_tokens": 27811,
+    "cache_creation_input_tokens": 6819,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 6819
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-haiku-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 8522,
+   "cacheReadInputTokens": 106046,
+   "cacheCreationInputTokens": 16382,
+   "webSearchRequests": 0,
+   "costUSD": 0.00859886,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 6010,
+   "cacheCreationEphemeral5mInputTokens": 0,
+   "cacheCreationEphemeral1hInputTokens": 16382,
+   "canonicalModel": "claude-haiku-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "num_turns": 12,
+ "duration_ms": 39562,
+ "duration_api_ms": 39453,
+ "is_error": false,
+ "stop_reason": "end_turn"
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "number": 401,
+    "title": "Worker hangs on SIGTERM while a job is running",
+    "labels": [
+      "bug"
+    ],
+    "author": "hollis",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Sending SIGTERM to a busy Worker never exits; the job finishes but the process stays up."
+  },
+  {
+    "number": 403,
+    "title": "schedule() ignores the tz argument",
+    "labels": [
+      "bug"
+    ],
+    "author": "sam-okafor",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "schedule(at=..., tz='Europe/Berlin') runs the job at UTC time."
+  },
+  {
+    "number": 405,
+    "title": "Add Queue.drain() to wait until all jobs finish",
+    "labels": [
+      "feature"
+    ],
+    "author": "tobiaslund",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Useful in tests and graceful shutdowns."
+  },
+  {
+    "number": 407,
+    "title": "Memory leak in the result cache",
+    "labels": [
+      "bug"
+    ],
+    "author": "ana-p",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Results are kept forever when result_ttl is unset. Fix landed in two commits (one cherry-picked)."
+  },
+  {
+    "number": 409,
+    "title": "retry_backoff option on Worker",
+    "labels": [
+      "feature"
+    ],
+    "author": "lena-ortiz",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Exponential backoff between retries, off by default."
+  },
+  {
+    "number": 411,
+    "title": "Job.retries is off by one",
+    "labels": [
+      "bug"
+    ],
+    "author": "sam-okafor",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "A job with retries=3 runs four times."
+  },
+  {
+    "number": 412,
+    "title": "Drop support for Python 3.9",
+    "labels": [
+      "breaking"
+    ],
+    "author": "lena-ortiz",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Python 3.9 is end of life. Minimum is now Python 3.10."
+  },
+  {
+    "number": 414,
+    "title": "RedisBackend does not release the connection after a timeout",
+    "labels": [
+      "bug"
+    ],
+    "author": "rvdb",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Pool exhaustion after many timeouts."
+  },
+  {
+    "number": 415,
+    "title": "Prometheus metrics endpoint",
+    "labels": [
+      "feature"
+    ],
+    "author": "ana-p",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "New metrics_server() helper serves queue depth, job durations and failures."
+  },
+  {
+    "number": 416,
+    "title": "Add Queue.peek_many()",
+    "labels": [
+      "feature"
+    ],
+    "author": "dkowal",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Look at the next n jobs without taking them."
+  },
+  {
+    "number": 418,
+    "title": "Rename Queue.put_nowait() to Queue.try_put()",
+    "labels": [
+      "breaking"
+    ],
+    "author": "lena-ortiz",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "put_nowait() suggested asyncio semantics it never had. try_put() returns False when full instead of blocking."
+  },
+  {
+    "number": 419,
+    "title": "Queue.stats() dashboard",
+    "labels": [
+      "feature"
+    ],
+    "author": "sam-okafor",
+    "state": "open",
+    "milestone": "2.4.0",
+    "body": "Work in progress behind a flag."
+  },
+  {
+    "number": 420,
+    "title": "Deprecate Queue.size in favour of len(queue)",
+    "labels": [
+      "deprecation"
+    ],
+    "author": "sam-okafor",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Queue.size still works and warns; removal planned for 3.0."
+  },
+  {
+    "number": 422,
+    "title": "Job.cancel() for queued jobs",
+    "labels": [
+      "feature"
+    ],
+    "author": "lena-ortiz",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Cancels a job that has not started yet."
+  },
+  {
+    "number": 426,
+    "title": "Refactor the backend registry",
+    "labels": [
+      "internal"
+    ],
+    "author": "lena-ortiz",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "No user-facing change."
+  },
+  {
+    "number": 427,
+    "title": "Redis Sentinel support in RedisBackend",
+    "labels": [
+      "feature"
+    ],
+    "author": "dkowal",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Pass sentinels=[...] to connect through Redis Sentinel."
+  },
+  {
+    "number": 429,
+    "title": "Queue.try_put() raises ValueError instead of QueueFull",
+    "labels": [
+      "bug"
+    ],
+    "author": "rvdb",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Introduced by #418, which has not been released yet."
+  },
+  {
+    "number": 431,
+    "title": "Pickle payloads deserialized without an allow-list (CVE-0000-00000)",
+    "labels": [
+      "security",
+      "bug"
+    ],
+    "author": "mira-k",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "A crafted job payload could run code on the worker. Fixed by the new serializer_allowlist option, on by default."
+  },
+  {
+    "number": 433,
+    "title": "Fix typo in README",
+    "labels": [
+      "docs"
+    ],
+    "author": "hollis",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "'recieve' -> 'receive'."
+  },
+  {
+    "number": 435,
+    "title": "Move CI to ubuntu-24.04",
+    "labels": [
+      "ci"
+    ],
+    "author": "sam-okafor",
+    "state": "closed",
+    "milestone": "2.4.0",
+    "body": "Runner image update."
+  },
+  {
+    "number": 438,
+    "title": "Worker logs every poll at DEBUG",
+    "labels": [
+      "bug"
+    ],
+    "author": "rvdb",
+    "state": "closed",
+    "milestone": "2.5.0",
+    "body": "Too noisy. The fix is merged to main and scheduled for 2.5.0."
+  },
+  {
+    "number": 440,
+    "title": "Async Queue API",
+    "labels": [
+      "feature"
+    ],
+    "author": "ana-p",
+    "state": "open",
+    "milestone": "2.5.0",
+    "body": "Design discussion."
+  }
+]

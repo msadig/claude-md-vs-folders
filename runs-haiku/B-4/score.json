@@ -1,0 +1,9 @@
+{
+ "content": 100.0,
+ "style": 99.2,
+ "format": 100.0,
+ "total": 99.4,
+ "failed": [
+  "style: #427 API names exact"
+ ]
+}

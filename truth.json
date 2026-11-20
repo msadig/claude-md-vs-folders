@@ -1,0 +1,109 @@
+{
+ "release": "2.4.0",
+ "date": "2026-11-02",
+ "shipped": {
+  "401": {
+   "section": "Fixed",
+   "external": true,
+   "author": "hollis"
+  },
+  "403": {
+   "section": "Fixed",
+   "external": false,
+   "author": "sam-okafor"
+  },
+  "405": {
+   "section": "Added",
+   "external": true,
+   "author": "tobiaslund"
+  },
+  "407": {
+   "section": "Fixed",
+   "external": true,
+   "author": "ana-p"
+  },
+  "409": {
+   "section": "Added",
+   "external": false,
+   "author": "lena-ortiz"
+  },
+  "411": {
+   "section": "Fixed",
+   "external": false,
+   "author": "sam-okafor"
+  },
+  "412": {
+   "section": "Breaking changes",
+   "external": false,
+   "author": "lena-ortiz"
+  },
+  "414": {
+   "section": "Fixed",
+   "external": true,
+   "author": "rvdb"
+  },
+  "415": {
+   "section": "Added",
+   "external": true,
+   "author": "ana-p"
+  },
+  "418": {
+   "section": "Breaking changes",
+   "external": false,
+   "author": "lena-ortiz"
+  },
+  "420": {
+   "section": "Deprecated",
+   "external": false,
+   "author": "sam-okafor"
+  },
+  "422": {
+   "section": "Added",
+   "external": false,
+   "author": "lena-ortiz"
+  },
+  "427": {
+   "section": "Added",
+   "external": true,
+   "author": "dkowal"
+  },
+  "431": {
+   "section": "Security",
+   "external": true,
+   "author": "mira-k"
+  }
+ },
+ "traps": {
+  "416": "reverted",
+  "429": "fixes an unreleased bug",
+  "426": "internal",
+  "433": "docs",
+  "435": "ci",
+  "419": "open",
+  "438": "milestone 2.5.0"
+ },
+ "api_names": [
+  "Queue",
+  "Queue.put()",
+  "Queue.try_put()",
+  "Queue.put_nowait()",
+  "Queue.get()",
+  "Queue.drain()",
+  "Queue.size",
+  "len(queue)",
+  "QueueFull",
+  "Worker",
+  "retry_backoff",
+  "Job",
+  "Job.cancel()",
+  "Job.retries",
+  "schedule()",
+  "RedisBackend",
+  "metrics_server()",
+  "serializer_allowlist",
+  "result_ttl",
+  "SIGTERM",
+  "tq stats"
+ ],
+ "cve": "CVE-0000-00000"
+}

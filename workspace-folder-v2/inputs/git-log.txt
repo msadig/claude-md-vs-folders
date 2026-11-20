@@ -1,0 +1,33 @@
+f87d8f2 2026-10-30 Lena Ortiz: Bump version to 2.4.0
+1936e73 2026-10-29 Lena Ortiz: Update copyright year
+3480d74 2026-10-28 Sam Okafor: ci: cache pip downloads
+3890104 2026-10-27 Lena Ortiz: Merge branch 'release/2.4.0'
+4872068 2026-10-26 Sam Okafor: chore: typing fixes
+9e5098e 2026-10-25 Lena Ortiz: docs: document serializer_allowlist (#431)
+f449b69 2026-10-24 Mira Kaur: security: serializer_allowlist, on by default (#431)
+cd52f20 2026-10-23 Ruben van den Berg: worker: quieter DEBUG logging (#438)
+777896d 2026-10-22 Ana Pereira: cache: evict results when result_ttl is unset (#407) (cherry picked from commit 7d1c0e2)
+79156c4 2026-10-21 Hollis Grant: docs: fix typo in README (#433)
+59cfc72 2026-10-20 Ruben van den Berg: queue: try_put() raises QueueFull, not ValueError (#429)
+5fe1342 2026-10-19 Dawid Kowalski: redis: Sentinel support (#427)
+554c3e9 2026-10-18 Dawid Kowalski: Revert "queue: add peek_many() (#416)" - breaks fairness guarantees
+fbc9836 2026-10-17 Lena Ortiz: job: add cancel() (#422)
+886fdbd 2026-10-16 Sam Okafor: queue: deprecate size property (#420)
+b4fc676 2026-10-15 Sam Okafor: WIP: stats dashboard behind TQ_STATS flag (#419)
+59b3e0e 2026-10-14 Lena Ortiz: queue: rename put_nowait() to try_put() (#418)
+f1aecb5 2026-10-13 Dawid Kowalski: queue: add peek_many() (#416)
+b8828db 2026-10-12 Ana Pereira: metrics: add metrics_server() (#415)
+fb26db5 2026-10-11 Ruben van den Berg: redis: release connection after timeout (#414)
+74cfe1d 2026-10-10 Lena Ortiz: Refactor backend registry (#426)
+a785a0a 2026-10-09 Lena Ortiz: Merge branch 'fix/retries'
+c18dcf1 2026-10-09 Sam Okafor: job: fix retries off-by-one (#411)
+d340604 2026-10-08 Lena Ortiz: worker: retry_backoff option (#409)
+46dbb09 2026-10-07 Ana Pereira: cache: evict results when result_ttl is unset (#407)
+34c3e38 2026-10-06 Tobias Lund: tests for drain() (#405)
+9ed9c14 2026-10-06 Tobias Lund: queue: add drain() (#405)
+93c9e1b 2026-10-05 Sam Okafor: schedule: respect tz argument (#403)
+aee9af3 2026-10-04 Sam Okafor: chore: bump dev dependencies
+d06299c 2026-10-03 Hollis Grant: worker: exit cleanly on SIGTERM while a job runs (#401)
+e90a1cd 2026-10-02 Lena Ortiz: Drop Python 3.9 from classifiers and CI matrix (#412)
+39afc5c 2026-10-02 Sam Okafor: ci: move runners to ubuntu-24.04 (#435)
+133d189 2026-10-01 Lena Ortiz: Start 2.4.0 development

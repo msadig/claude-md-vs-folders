@@ -1,0 +1,20 @@
+{
+ "content": 94.3,
+ "style": 91.5,
+ "format": 100.0,
+ "total": 92.8,
+ "failed": [
+  "content: #431 listed exactly once",
+  "content: #431 in Security",
+  "style: format: - Restrict job payload unpickling to `se",
+  "style: #405 credit right",
+  "style: #409 starts with a capital",
+  "style: #415 starts with a capital",
+  "style: #415 credit right",
+  "style: #427 credit right",
+  "style: #401 credit right",
+  "style: #403 starts with a capital",
+  "style: #407 credit right",
+  "style: #414 credit right"
+ ]
+}

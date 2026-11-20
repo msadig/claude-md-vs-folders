@@ -1,0 +1,12 @@
+{
+  "version": "2.4.0",
+  "date": "2026-11-02",
+  "counts": {
+    "Breaking changes": 2,
+    "Security": 1,
+    "Added": 5,
+    "Deprecated": 1,
+    "Fixed": 5
+  },
+  "issues": [401, 403, 405, 407, 409, 411, 412, 414, 415, 418, 420, 422, 427]
+}

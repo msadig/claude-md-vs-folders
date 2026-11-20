@@ -1,0 +1,10 @@
+{
+ "content": 100.0,
+ "style": 98.4,
+ "format": 100.0,
+ "total": 98.9,
+ "failed": [
+  "style: #415 starts with a capital",
+  "style: #403 starts with a capital"
+ ]
+}
